@@ -1,1 +1,0 @@
-# aidawayup1.github.io
