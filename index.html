@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнеее задание</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.1.7.1.min.js">
+	</script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				// Фикмированная шапка при скролле
+				$("#header").removeClass("default");
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 20) {
+						$("#header").addClass("default").fadeIn('fast');
+					} else {
+						$("#header").removeClass("default").fadeIn('fast');
+					};
+				});
+				// Плавный скролл по якорям
+				$('a[href^="#"]').click(function () { 
+				    elementClick = $(this).attr("href");
+					destination = $(elementClick).offset().top;
+					if($.browser.safari){
+					$('body').animate( { scrollTop: destination }, 1000 );
+					} else {
+				    	$('html').animate( { scrollTop: destination }, 1000 );
+					}
+					return false;
+			   });
+			});
+	</script>
+
+</head>
+
+
+<body>
+	<header>
+		<div class="container">
+				<div class="heading clearfix">
+					<nav>
+						<ul class="menu">
+							<li>
+								<a href="#about">Обо мне</a>
+							</li>
+							<li>
+								<a href="#skills">Мои навыки</a>
+							</li>
+							<li>
+								<a href="#">Портфолио</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="titles">
+					<div class="titles__first">
+						Всем привет!
+					</div>
+					<h1>
+						я верстаю свой первый лендинг
+					</h1>
+				</div>
+				<a class="button" href="#about">Смотреть далее</a>
+		</div>
+	</header>
+
+
+	<section id="about">
+		<div class="container">
+			<div class="title" id="about">
+				<h2>
+					Обо мне
+				</h2>
+			</div>
+			<div class="services clearfix">
+				<div class="about__item">
+					<img src="img/bio.png" alt="Биография">
+					<h3>Биография</h3>
+					<p>
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют от нас анализа соответствующий условий активизации. 
+					</p>
+				</div>
+				<div class="about__item">
+					<img src="img/edu.png" alt="Образование">
+					<h3>Образование</h3>
+					<p>
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют от нас анализа соответствующий условий активизации. 
+					</p>
+				</div>
+				<div class="about__item">
+					<img src="img/car.png" alt="Карьера">
+					<h3>Карьера</h3>
+					<p>
+						Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют от нас анализа соответствующий условий активизации. 
+					</p>
+				</div>
+		</div>
+	</section> 
+
+	<section id="skills">
+		<div class="container">
+			<div class="title">
+				<h2>
+					Мои навыки
+				</h2>
+				<p>
+					Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют от нас анализа соответствующий условий активизации. 
+				</p>
+			</div>
+		</div>
+	</section>	
+
+	<section>
+		<div class="container_test">
+			<div class="title_test">
+				<h2>
+					TEST1 H2
+				</h2>
+			</div>
+			<div class="title_test">
+				<h2>
+					TEST2 H2
+				</h2>
+			</div>
+			<div class="title_test">
+				<h2>
+					TEST3 H2
+				</h2>
+			</div>
+		</div>
+		<div class="container_test">
+			<div class="title_test">
+				<h3>
+					TEST1 H3
+				</h3>
+			</div>
+			<div class="title_test">
+				<h3>
+					TEST2 H3
+				</h3>
+			</div>
+			<div class="title_test">
+				<h3>
+					TEST3 H3
+				</h3>
+			</div>
+		</div>
+		<div class="container_test">
+			<div class="title_test">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</div>
+			<div class="title_test">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</div>
+			<div class="title_test">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</div>
+		</div>
+		<div class="container_test">
+			<div class="title_test">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</div>
+			<div class="title_test">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</div>
+			<div class="title_test">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</div>
+		</div>
+		<div class="container_test" id="img1">
+			<div class="title_test">
+				<img src="https://wayup.in/assets/templates/wp/courses/course4/images/skill1_mini.jpg" alt="wayup">
+			</div>
+			<div class="title_test">
+				<img src="https://wayup.in/assets/templates/wp/courses/course4/images/skill2_mini.jpg" alt="wayup">
+			</div>
+			<div class="title_test">
+				<img src="https://wayup.in/assets/templates/wp/courses/course4/images/skill3_mini.jpg" alt="wayup">
+			</div>
+			<div class="title_test">
+				<img src="https://wayup.in/assets/templates/wp/courses/course4/images/skill4_mini.jpg" alt="wayup">
+			</div>
+		</div>
+		<div class="container_test">
+			<div class="title_test">
+				<a href="#" class="link1">Link1</a>
+			</div>
+			<div class="title_test">
+				<a href="#" class="link1">Link2</a>
+			</div>
+			<div class="title_test">
+				<a href="#" class="link1">Link3</a>
+			</div>
+		</div>
+	</section>	
+	
+</body>
+
+
+
+</html>

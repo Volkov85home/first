@@ -1,0 +1,163 @@
+body{
+	font-family: 'Ubuntu', arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+header{
+	background: url(../img/husky.jpg) no-repeat center top/cover;
+	height: 100vh;
+}
+
+.container {
+	width: 930px;
+	margin: 0 auto;
+}
+
+
+nav {
+	float: right;
+	padding: 20px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 41px;
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.titles__first {
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 180px;
+}
+
+h1 {
+	font-size: 75px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 15px;
+}
+
+.button {
+	background: #cb3340;
+	color: #fff;
+	border-radius: 50px;
+	display: block;
+	width: 240px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+.about {
+	margin-top: 80px;
+}
+
+.about__item	{
+	width: 270px;
+	float: left;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.about__item:last-child {
+	float: right;
+}
+
+.about__item:nth-child(2) {
+	margin-left: 60px;
+}
+
+.title h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+.title p {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+#skills {
+	background: #f7f7f7;
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+
+.container_test{
+	width: 930px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.title_test h2 {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	width: 250px;
+}
+
+.title_test h3 {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	width: 250px;
+}
+
+.title_test p {
+	width: 250px;
+	text-align: center;
+}
+
+#img1{
+	 flex-wrap: wrap;
+	 justify-content: space-around;
+}
+
+.link1{
+	font-size: 30px;
+	text-decoration: none;
+}
